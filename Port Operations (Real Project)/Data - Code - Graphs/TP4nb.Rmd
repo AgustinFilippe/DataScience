@@ -1,0 +1,250 @@
+
+```{r}
+# Objetivo predecir si la operacion de cada embarcacion, es decir, si la operacion es "load" o "discharge"
+df <- read.csv("data_semi_cleaned.csv")
+View(df)
+```
+
+```{r}
+# Elegimos las caracteristicas que pueden tener una influencia directa o inderecta en la operacion
+df <- df[, c("Commodity.Group", "Commodity", "Tons", "Port", "Time.at.Port", 
+                 "Time.at.Berth", "Destination...Origin", "Op.")]
+
+# Convertir Op. en la variable categorica para el modelo de bayes
+df$Op. <- as.factor(df$Op.)
+```
+
+```{r}
+# Calculamos la probabilidad de cada clase de Op. (prob de "load" y prob de "discharge")
+prior_probabilities <- prop.table(table(df$Op.))
+print(prior_probabilities)
+```
+
+```{r}
+table_commodity_group <- table(df$Commodity.Group, df$Op.)
+conditional_prob_commodity_group <- prop.table(table_commodity_group, margin = 2)
+print(conditional_prob_commodity_group)
+```
+```{r}
+table_port <- table(df$Port, df$Op.)
+conditional_prob_port <- prop.table(table_port, margin = 2)
+print(conditional_prob_port)
+```
+
+```{r}
+# Para estas características, es mejor calcular la media y desviación estándar dentro de cada clase de Op., ya que podemos suponer una distribución normal.
+summary_tons <- aggregate(Tons ~ Op., data = df, FUN = function(x) c(mean = mean(x), sd = sd(x)))
+print(summary_tons)
+```
+
+```{r}
+# Calcular media y desviación estándar de 'Time.at.Port' por cada clase en 'Op.'
+summary_time_port <- aggregate(Time.at.Port ~ Op., data = df, FUN = function(x) c(mean = mean(x), sd = sd(x)))
+print(summary_time_port)
+
+# Calcular media y desviación estándar de 'Time.at.Berth' por cada clase en 'Op.'
+summary_time_berth <- aggregate(Time.at.Berth ~ Op., data = df, FUN = function(x) c(mean = mean(x), sd = sd(x)))
+print(summary_time_berth)
+```
+
+
+```{r}
+predict_op <- function(new_instance, prior_probs, cond_probs_commodity_group, cond_probs_port, summary_tons, summary_time_port, summary_time_berth) {
+  
+  # Extraer características de la nueva instancia
+  commodity_group <- new_instance$Commodity.Group
+  port <- new_instance$Port
+  tons <- new_instance$Tons
+  time_at_port <- new_instance$Time.at.Port
+  time_at_berth <- new_instance$Time.at.Berth
+  
+  # Inicializar log-probabilidades para cada clase
+  log_prob_load <- log(prior_probs["load"])
+  log_prob_discharge <- log(prior_probs["discharge"])
+  
+  # Agregar log-probabilidades de 'Commodity.Group' y 'Port' según cond_probs
+  log_prob_load <- log_prob_load + log(cond_probs_commodity_group[commodity_group, "load"]) + log(cond_probs_port[port, "load"])
+  log_prob_discharge <- log_prob_discharge + log(cond_probs_commodity_group[commodity_group, "discharge"]) + log(cond_probs_port[port, "discharge"])
+  
+  # Calcular probabilidad de 'Tons' bajo una distribución normal para cada clase
+  log_prob_load <- log_prob_load + dnorm(tons, mean = summary_tons[summary_tons$Op. == "load", "Tons.mean"], sd = summary_tons[summary_tons$Op. == "load", "Tons.sd"], log = TRUE)
+  log_prob_discharge <- log_prob_discharge + dnorm(tons, mean = summary_tons[summary_tons$Op. == "discharge", "Tons.mean"], sd = summary_tons[summary_tons$Op. == "discharge", "Tons.sd"], log = TRUE)
+  
+  # Calcular probabilidad de 'Time.at.Port' bajo una distribución normal para cada clase
+  log_prob_load <- log_prob_load + dnorm(time_at_port, mean = summary_time_port[summary_time_port$Op. == "load", "Time.at.Port.mean"], sd = summary_time_port[summary_time_port$Op. == "load", "Time.at.Port.sd"], log = TRUE)
+  log_prob_discharge <- log_prob_discharge + dnorm(time_at_port, mean = summary_time_port[summary_time_port$Op. == "discharge", "Time.at.Port.mean"], sd = summary_time_port[summary_time_port$Op. == "discharge", "Time.at.Port.sd"], log = TRUE)
+  
+  # Calcular probabilidad de 'Time.at.Berth' bajo una distribución normal para cada clase
+  log_prob_load <- log_prob_load + dnorm(time_at_berth, mean = summary_time_berth[summary_time_berth$Op. == "load", "Time.at.Berth.mean"], sd = summary_time_berth[summary_time_berth$Op. == "load", "Time.at.Berth.sd"], log = TRUE)
+  log_prob_discharge <- log_prob_discharge + dnorm(time_at_berth, mean = summary_time_berth[summary_time_berth$Op. == "discharge", "Time.at.Berth.mean"], sd = summary_time_berth[summary_time_berth$Op. == "discharge", "Time.at.Berth.sd"], log = TRUE)
+  
+  # Decidir la clase con la mayor log-probabilidad
+  if (log_prob_load > log_prob_discharge) {
+    return("load")
+  } else {
+    return("discharge")
+  }
+}
+
+# Cálculo de probabilidades y resúmenes
+
+# Probabilidades previas para 'Op.'
+prior_probs <- prop.table(table(df$Op.))
+
+# Probabilidades condicionales para 'Commodity.Group'
+table_commodity_group <- table(df$Commodity.Group, df$Op.)
+conditional_prob_commodity_group <- prop.table(table_commodity_group, margin = 2)
+
+# Probabilidades condicionales para 'Port'
+table_port <- table(df$Port, df$Op.)
+conditional_prob_port <- prop.table(table_port, margin = 2)
+
+# Resumen de 'Tons' por clase en 'Op.'
+summary_tons <- aggregate(Tons ~ Op., data = df, FUN = function(x) c(mean = mean(x), sd = sd(x)))
+summary_tons <- do.call(data.frame, summary_tons)
+
+# Resumen de 'Time.at.Port' por clase en 'Op.'
+summary_time_port <- aggregate(Time.at.Port ~ Op., data = df, FUN = function(x) c(mean = mean(x), sd = sd(x)))
+summary_time_port <- do.call(data.frame, summary_time_port)
+
+# Resumen de 'Time.at.Berth' por clase en 'Op.'
+summary_time_berth <- aggregate(Time.at.Berth ~ Op., data = df, FUN = function(x) c(mean = mean(x), sd = sd(x)))
+summary_time_berth <- do.call(data.frame, summary_time_berth)
+
+# Nueva instancia para predicción
+new_instance <- data.frame(
+  Commodity.Group = "Chemical products",
+  Port = "San Lorenzo - Argentina",
+  Tons = 2500,
+  Time.at.Port = 2.5,
+  Time.at.Berth = 1.5
+)
+
+# Llamada a la función de predicción
+resultado <- predict_op(new_instance, prior_probs, conditional_prob_commodity_group, conditional_prob_port, summary_tons, summary_time_port, summary_time_berth)
+print(resultado)
+```
+
+
+```{r}
+# Cargar las librerías necesarias
+library(ggplot2)
+library(reshape2)
+
+# Usar datos reales para las variables 'Tons' y 'Time.at.Port' y simular etiquetas de clase
+set.seed(42)
+x_tons <- sample(df$Tons, 10, replace = TRUE)
+y_time_at_port <- sample(df$Time.at.Port, 10, replace = TRUE)
+classes <- sample(df$Op., 10, replace = TRUE)
+
+# Crear una cuadrícula de valores para 'Tons' y 'Time.at.Port' que cubra todo el rango
+tons_vals <- seq(min(x_tons), max(x_tons), length.out = 50)
+time_port_vals <- seq(min(y_time_at_port), max(y_time_at_port), length.out = 50)
+
+# Crear una matriz de intensidad basada en una combinación de sin y cos para simular la "probabilidad marginal"
+heatmap_data <- outer(sin(pi * tons_vals / max(tons_vals)), cos(pi * time_port_vals / max(time_port_vals)))
+
+# Convertir la matriz en un data frame para usar con ggplot
+heatmap_df <- expand.grid(Tons = tons_vals, Time.at.Port = time_port_vals)
+heatmap_df$Intensity <- as.vector(heatmap_data)
+
+# Crear el gráfico de calor con la cuadrícula de fondo
+p <- ggplot() +
+  geom_tile(data = heatmap_df, aes(x = Tons, y = Time.at.Port, fill = Intensity), alpha = 0.5) +
+  scale_fill_gradient2(low = "blue", mid = "green", high = "red", midpoint = 0, name = "Intensity") +
+  
+  # Añadir puntos para 'load' y 'discharge' con diferentes símbolos
+  geom_point(aes(x = x_tons, y = y_time_at_port, color = classes, shape = classes), size = 4) +
+  scale_color_manual(values = c("load" = "blue", "discharge" = "red")) +
+  scale_shape_manual(values = c("load" = 16, "discharge" = 4)) +
+  
+  # Etiquetas y título
+  labs(x = "Tons", y = "Time at Port", title = "Visualizacion de las probabilidaes marginales para Load y Discharge") +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+# Mostrar el gráfico
+print(p)
+
+```
+
+
+
+```{r}
+library(rpart)
+library(rpart.plot)
+
+# Crear el árbol de decisión usando las variables 'Tons' y 'Time.at.Port' para predecir 'Op.'
+# Aquí asumimos que tienes las columnas 'Tons', 'Time.at.Port', y 'Op.' en tu dataframe 'df'
+arbol_modelo <- rpart(Op. ~ Tons + Time.at.Port, data = df, method = "class")
+
+# Visualizar el árbol de decisión
+rpart.plot(arbol_modelo, type = 3, extra = 104, fallen.leaves = TRUE, 
+           box.palette = c("Green", "Red"), shadow.col = "gray", 
+           main = "Árbol de Decisión para la Clasificación de Operación")
+```
+
+
+
+```{r}
+# Cargar la librería necesaria
+library(ggplot2)
+
+# Crear datos de ejemplo con categorías binarias de 'Tons' y 'Time.at.Port' usando cuantiles
+df$Tons_bin <- ifelse(df$Tons > quantile(df$Tons, 0.5, na.rm = TRUE), 1, 0)
+df$Time_at_Port_bin <- ifelse(df$Time.at.Port > quantile(df$Time.at.Port, 0.5, na.rm = TRUE), 1, 0)
+
+# Crear una tabla de frecuencia para cada combinación de 'Tons_bin' y 'Time_at_Port_bin'
+table_counts <- as.data.frame(table(df$Tons_bin, df$Time_at_Port_bin, df$Op.))
+colnames(table_counts) <- c("Tons_bin", "Time_at_Port_bin", "Op", "Freq")
+
+# Crear un data frame pivotado para combinar las clases dentro de cada cuadrante
+table_pivot <- reshape(table_counts, idvar = c("Tons_bin", "Time_at_Port_bin"), timevar = "Op", direction = "wide")
+colnames(table_pivot) <- c("Tons_bin", "Time_at_Port_bin", "Freq_load", "Freq_discharge")
+
+# Crear una columna de color según la combinación de las frecuencias
+table_pivot$color <- with(table_pivot, ifelse(!is.na(Freq_load) & !is.na(Freq_discharge), "lightpurple",
+                           ifelse(!is.na(Freq_load), "lightgreen", "lightorange")))
+
+# Crear el gráfico de celdas con colores de fondo específicos para cada combinación
+ggplot(table_pivot, aes(x = Tons_bin, y = Time_at_Port_bin)) +
+  geom_tile(aes(fill = color), color = "black") +
+  geom_text(aes(label = paste("load:", Freq_load, "\ndischarge:", Freq_discharge)), color = "black", size = 5) +
+  scale_fill_manual(values = c("lightgreen" = "#b3e2cd", "lightorange" = "#fdcc8a", "lightpurple" = "#d1c4e9")) +
+  labs(x = "Tons (Binned)", y = "Time at Port (Binned)", title = "Frecuencia por Combinación de Categorías") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+
+```
+
+
+```{r}
+# Cargar las librerías necesarias
+library(rpart)
+library(rpart.plot)
+library(dplyr)
+
+# Paso 1: Encontrar los tres Commodities que más se repiten
+commodities_mas_frecuentes <- df %>%
+  count(Commodity) %>%
+  arrange(desc(n)) %>%
+  slice(1:3) %>%
+  pull(Commodity)
+
+# Paso 2: Filtrar el dataset para incluir solo los tres Commodities más frecuentes
+df_filtrado <- df %>%
+  filter(Commodity %in% commodities_mas_frecuentes)
+
+# Paso 3: Entrenar el árbol de decisión usando el dataset filtrado y las variables adicionales
+arbol_modelo <- rpart(Op. ~ Commodity + Time.at.Port + Time.at.Berth, 
+                      data = df_filtrado, method = "class", 
+                      control = rpart.control(cp = 0.001, minsplit = 10, maxdepth = 5))
+
+# Visualizar el árbol de decisión con detalles de cada nodo
+rpart.plot(arbol_modelo, type = 3, extra = 104, fallen.leaves = TRUE,
+           box.palette = c("Green", "Red"), shadow.col = "gray",
+           main = "Árbol de Decisión para los Tres Commodities más Frecuentes y Variables de Tiempo")
+
+```
+
