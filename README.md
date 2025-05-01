@@ -10,4 +10,4 @@ Estructura del Repositorio
 Cada proyecto está organizado en su propio directorio, con el código fuente, documentación y archivos relevantes para su ejecución.
 
 Contribuciones
-Si tienes alguna sugerencia, mejora o pregunta sobre alguno de los proyectos, no dudes en abrir un issue o hacer un pull request. ¡Todas las contribuciones son bienvenidas!
+Si tienes alguna sugerencia, mejora o pregunta sobre alguno de los proyectos, no dudes en escribirme.
