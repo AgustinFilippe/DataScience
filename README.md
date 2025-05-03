@@ -10,7 +10,7 @@ Estructura del Repositorio
 Cada proyecto está organizado en su propio directorio, con el código fuente, documentación y archivos relevantes para su ejecución.
 
 Glosario
-ML --> Machine Learning,  permite a las máquinas aprender de datos y mejorar su rendimiento en tareas específicas sin ser programadas explícitamente.
-DL --> Deep Learning, utiliza redes neuronales profundas para analizar grandes cantidades de datos.
-Web Scraping -> Proceso de extraer datos de sitios web de manera automática.
-Python / R --> Lenguajes de Programacion
+- ML --> Machine Learning,  permite a las máquinas aprender de datos y mejorar su rendimiento en tareas específicas sin ser programadas explícitamente.
+- DL --> Deep Learning, utiliza redes neuronales profundas para analizar grandes cantidades de datos.
+- Web Scraping -> Proceso de extraer datos de sitios web de manera automática.
+- Python / R --> Lenguajes de Programacion
