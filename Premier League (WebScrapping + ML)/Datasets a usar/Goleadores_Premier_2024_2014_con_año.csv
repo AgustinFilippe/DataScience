@@ -1,0 +1,501 @@
+Unnamed: 0,Posicion,Jugador,Equipo,Partidos,Goles,Año
+0,1.0,Sergio Agüero,Manchester City,33,26,2014
+1,2.0,Harry Kane,Tottenham Hotspur,34,21,2014
+2,3.0,Diego Costa,Chelsea,26,20,2014
+3,4.0,Charlie Austin,Queens Park Rangers,35,18,2014
+4,5.0,Alexis Sánchez,Arsenal,35,16,2014
+5,6.0,Eden Hazard,Chelsea,38,14,2014
+6,,Saido Berahino,West Bromwich Albion,38,14,2014
+7,,Olivier Giroud,Arsenal,27,14,2014
+8,9.0,Christian Benteke,Aston Villa,29,13,2014
+9,10.0,Graziano Pellè,Southampton,38,12,2014
+10,,Wayne Rooney,Manchester United,33,12,2014
+11,,David Silva,Manchester City,32,12,2014
+12,13.0,Leonardo Ulloa,Leicester City,37,11,2014
+13,,Danny Ings,Burnley,35,11,2014
+14,,Nacer Chadli,Tottenham Hotspur,35,11,2014
+15,,Mame Biram Diouf,Stoke City,34,11,2014
+16,,Wilfried Bony,Manchester City,30,11,2014
+17,,Papiss Cissé,Newcastle United,22,11,2014
+18,19.0,Christian Eriksen,Tottenham Hotspur,38,10,2014
+19,,Romelu Lukaku,Everton,36,10,2014
+20,,Sadio Mané,Southampton,30,10,2014
+21,,Yaya Touré,Manchester City,29,10,2014
+22,,Robin van Persie,Manchester United,27,10,2014
+23,,Diafra Sakho,West Ham United,23,10,2014
+24,25.0,Juan Mata,Manchester United,33,9,2014
+25,,Steven Gerrard,Liverpool,29,9,2014
+26,27.0,Ki Sung-Yueng,Swansea City,33,8,2014
+27,,Peter Crouch,Stoke City,33,8,2014
+28,,Jonathan Walters,Stoke City,32,8,2014
+29,,Nikica Jelavic,Hull City,27,8,2014
+30,31.0,Santi Cazorla,Arsenal,37,7,2014
+31,,Ayoze Pérez,Newcastle United,36,7,2014
+32,,Raheem Sterling,Liverpool,35,7,2014
+33,,Gylfi Sigurdsson,Swansea City,32,7,2014
+34,,Bafetimbi Gomis,Swansea City,31,7,2014
+35,,Charlie Adam,Stoke City,29,7,2014
+36,,Kevin Mirallas,Everton,29,7,2014
+37,,Loïc Rémy,Chelsea,21,7,2014
+38,,Glenn Murray,Crystal Palace,17,7,2014
+39,40.0,Stewart Downing,West Ham United,37,6,2014
+40,,Jordan Henderson,Liverpool,37,6,2014
+41,,Jason Puncheon,Crystal Palace,37,6,2014
+42,,Gabriel Agbonlahor,Aston Villa,35,6,2014
+43,,Frank Lampard,Manchester City,32,6,2014
+44,,Steven Naismith,Everton,31,6,2014
+45,,Leroy Fer,Queens Park Rangers,29,6,2014
+46,,Aaron Ramsey,Arsenal,29,6,2014
+47,,Oscar,Chelsea,28,6,2014
+48,,Marouane Fellaini,Manchester United,27,6,2014
+49,,Ander Herrera,Manchester United,26,6,2014
+0,1.0,Harry Kane,Tottenham Hotspur,38,25,2015
+1,2.0,Jamie Vardy,Leicester City,36,24,2015
+2,,Sergio Agüero,Manchester City,30,24,2015
+3,4.0,Romelu Lukaku,Everton,37,18,2015
+4,5.0,Riyad Mahrez,Leicester City,37,17,2015
+5,6.0,Olivier Giroud,Arsenal,38,16,2015
+6,7.0,Odion Ighalo,Watford,37,15,2015
+7,,Jermain Defoe,Sunderland,33,15,2015
+8,9.0,Troy Deeney,Watford,38,13,2015
+9,,Alexis Sánchez,Arsenal,30,13,2015
+10,11.0,André Ayew,Swansea City,34,12,2015
+11,,Diego Costa,Chelsea,28,12,2015
+12,13.0,Georginio Wijnaldum,Newcastle United,38,11,2015
+13,,Sadio Mané,Southampton,37,11,2015
+14,,Gylfi Sigurdsson,Swansea City,36,11,2015
+15,,Marko Arnautovic,Stoke City,34,11,2015
+16,,Anthony Martial,Manchester United,32,11,2015
+17,,Graziano Pellè,Southampton,30,11,2015
+18,19.0,Dele Alli,Tottenham Hotspur,33,10,2015
+19,,Roberto Firmino,Liverpool,31,10,2015
+20,,Shane Long,Southampton,28,10,2015
+21,22.0,Salomón Rondón,West Bromwich Albion,34,9,2015
+22,,Aleksandar Mitrovic,Newcastle United,34,9,2015
+23,,Dimitri Payet,West Ham United,30,9,2015
+24,,Christian Benteke,Liverpool,29,9,2015
+25,,Andy Carroll,West Ham United,27,9,2015
+26,27.0,Ross Barkley,Everton,38,8,2015
+27,,Wayne Rooney,Manchester United,28,8,2015
+28,,Michail Antonio,West Ham United,26,8,2015
+29,,Philippe Coutinho,Liverpool,26,8,2015
+30,,Kelechi Iheanacho,Manchester City,26,8,2015
+31,,Daniel Sturridge,Liverpool,14,8,2015
+32,33.0,Mark Noble,West Ham United,37,7,2015
+33,,Dusan Tadic,Southampton,34,7,2015
+34,,Jordan Ayew,Aston Villa,30,7,2015
+35,,Pedro,Chelsea,29,7,2015
+36,,Dieumerci Mbokani,Norwich City,29,7,2015
+37,,Bojan Krkic,Stoke City,27,7,2015
+38,,Kevin De Bruyne,Manchester City,25,7,2015
+39,40.0,Juan Mata,Manchester United,38,6,2015
+40,,Mesut Özil,Arsenal,35,6,2015
+41,,Christian Eriksen,Tottenham Hotspur,35,6,2015
+42,,Nathan Redmond,Norwich City,35,6,2015
+43,,Ayoze Pérez,Newcastle United,34,6,2015
+44,,Bafetimbi Gomis,Swansea City,33,6,2015
+45,,Yaya Touré,Manchester City,32,6,2015
+46,,Joshua King,AFC Bournemouth,32,6,2015
+47,,Raheem Sterling,Manchester City,31,6,2015
+48,,Leonardo Ulloa,Leicester City,29,6,2015
+49,,Manuel Lanzini,West Ham United,26,6,2015
+0,1.0,Harry Kane,Tottenham Hotspur,30,29,2016
+1,2.0,Romelu Lukaku,Everton,37,25,2016
+2,3.0,Alexis Sánchez,Arsenal,38,24,2016
+3,4.0,Diego Costa,Chelsea,35,20,2016
+4,,Sergio Agüero,Manchester City,31,20,2016
+5,6.0,Dele Alli,Tottenham Hotspur,37,18,2016
+6,7.0,Zlatan Ibrahimovic,Manchester United,28,17,2016
+7,8.0,Eden Hazard,Chelsea,36,16,2016
+8,,Joshua King,AFC Bournemouth,36,16,2016
+9,10.0,Jermain Defoe,Sunderland,37,15,2016
+10,,Christian Benteke,Crystal Palace,36,15,2016
+11,,Fernando Llorente,Swansea City,33,15,2016
+12,13.0,Son Heung-Min,Tottenham Hotspur,34,14,2016
+13,14.0,Jamie Vardy,Leicester City,35,13,2016
+14,,Philippe Coutinho,Liverpool,31,13,2016
+15,,Sadio Mané,Liverpool,27,13,2016
+16,17.0,Olivier Giroud,Arsenal,29,12,2016
+17,18.0,Roberto Firmino,Liverpool,35,11,2016
+18,19.0,Troy Deeney,Watford,37,10,2016
+19,,Sam Vokes,Burnley,37,10,2016
+20,,Theo Walcott,Arsenal,28,10,2016
+21,22.0,Gylfi Sigurdsson,Swansea City,38,9,2016
+22,,Álvaro Negredo,Middlesbrough,36,9,2016
+23,,Pedro,Chelsea,35,9,2016
+24,,Andre Gray,Burnley,32,9,2016
+25,,Michail Antonio,West Ham United,29,9,2016
+26,27.0,Salomón Rondón,West Bromwich Albion,38,8,2016
+27,,Christian Eriksen,Tottenham Hotspur,36,8,2016
+28,,Manuel Lanzini,West Ham United,35,8,2016
+29,,Willian,Chelsea,34,8,2016
+30,,Mesut Özil,Arsenal,33,8,2016
+31,,Adam Lallana,Liverpool,31,8,2016
+32,33.0,Étienne Capoue,Watford,37,7,2016
+33,,Nathan Redmond,Southampton,37,7,2016
+34,,James Milner,Liverpool,36,7,2016
+35,,Wilfried Zaha,Crystal Palace,35,7,2016
+36,,Robert Snodgrass,West Ham United,35,7,2016
+37,,Divock Origi,Liverpool,34,7,2016
+38,,Raheem Sterling,Manchester City,33,7,2016
+39,,Peter Crouch,Stoke City,27,7,2016
+40,,Islam Slimani,Leicester City,23,7,2016
+41,,Junior Stanislas,AFC Bournemouth,21,7,2016
+42,,Andy Carroll,West Ham United,18,7,2016
+43,,Gabriel Jesus,Manchester City,10,7,2016
+44,45.0,Gary Cahill,Chelsea,37,6,2016
+45,,Gareth McAuley,West Bromwich Albion,36,6,2016
+46,,Georginio Wijnaldum,Liverpool,36,6,2016
+47,,Kevin De Bruyne,Manchester City,36,6,2016
+48,,Joe Allen,Stoke City,36,6,2016
+49,,Riyad Mahrez,Leicester City,36,6,2016
+0,1.0,Mohamed Salah,Liverpool,36,32,2017
+1,2.0,Harry Kane,Tottenham Hotspur,37,30,2017
+2,3.0,Sergio Agüero,Manchester City,25,21,2017
+3,4.0,Jamie Vardy,Leicester City,37,20,2017
+4,5.0,Raheem Sterling,Manchester City,33,18,2017
+5,6.0,Romelu Lukaku,Manchester United,34,16,2017
+6,7.0,Roberto Firmino,Liverpool,37,15,2017
+7,8.0,Alexandre Lacazette,Arsenal,32,14,2017
+8,9.0,Gabriel Jesus,Manchester City,29,13,2017
+9,10.0,Son Heung-Min,Tottenham Hotspur,37,12,2017
+10,,Riyad Mahrez,Leicester City,36,12,2017
+11,,Glenn Murray,Brighton & Hove Albion,35,12,2017
+12,,Eden Hazard,Chelsea,34,12,2017
+13,14.0,Marko Arnautovic,West Ham United,31,11,2017
+14,,Álvaro Morata,Chelsea,31,11,2017
+15,16.0,Christian Eriksen,Tottenham Hotspur,37,10,2017
+16,,Luka Milivojevic,Crystal Palace,36,10,2017
+17,,Leroy Sané,Manchester City,32,10,2017
+18,,Wayne Rooney,Everton,31,10,2017
+19,,Sadio Mané,Liverpool,29,10,2017
+20,,Chris Wood,Burnley,24,10,2017
+21,,Pierre-Emerick Aubameyang,Arsenal,13,10,2017
+22,23.0,Dele Alli,Tottenham Hotspur,36,9,2017
+23,,Ashley Barnes,Burnley,36,9,2017
+24,,Alexis Sánchez,Manchester United,31,9,2017
+25,,Anthony Martial,Manchester United,30,9,2017
+26,,Wilfried Zaha,Crystal Palace,29,9,2017
+27,,David Silva,Manchester City,29,9,2017
+28,29.0,Kevin De Bruyne,Manchester City,37,8,2017
+29,,Xherdan Shaqiri,Stoke City,36,8,2017
+30,,Ayoze Pérez,Newcastle United,36,8,2017
+31,,Joshua King,AFC Bournemouth,33,8,2017
+32,,Jesse Lingard,Manchester United,33,8,2017
+33,,Callum Wilson,AFC Bournemouth,28,8,2017
+34,,Javier Hernández,West Ham United,28,8,2017
+35,,Oumar Niasse,Everton,22,8,2017
+36,37.0,Pascal Groß,Brighton & Hove Albion,38,7,2017
+37,,Abdoulaye Doucouré,Watford,37,7,2017
+38,,Jay Rodríguez,West Bromwich Albion,37,7,2017
+39,,Jordan Ayew,Swansea City,36,7,2017
+40,,Salomón Rondón,West Bromwich Albion,36,7,2017
+41,,Marcus Rashford,Manchester United,35,7,2017
+42,,Marcos Alonso,Chelsea,33,7,2017
+43,,Olivier Giroud,Chelsea,29,7,2017
+44,,Steve Mounié,Huddersfield Town,28,7,2017
+45,,Aaron Ramsey,Arsenal,24,7,2017
+46,,Charlie Austin,Southampton,24,7,2017
+47,,Philippe Coutinho,Liverpool,14,7,2017
+48,49.0,Dusan Tadic,Southampton,36,6,2017
+49,,Willian,Chelsea,36,6,2017
+0,1.0,Mohamed Salah,Liverpool,38,22,2018
+1,,Sadio Mané,Liverpool,36,22,2018
+2,,Pierre-Emerick Aubameyang,Arsenal,36,22,2018
+3,4.0,Sergio Agüero,Manchester City,33,21,2018
+4,5.0,Jamie Vardy,Leicester City,34,18,2018
+5,6.0,Raheem Sterling,Manchester City,34,17,2018
+6,,Harry Kane,Tottenham Hotspur,28,17,2018
+7,8.0,Eden Hazard,Chelsea,37,16,2018
+8,9.0,Callum Wilson,AFC Bournemouth,30,14,2018
+9,10.0,Gylfi Sigurdsson,Everton,38,13,2018
+10,,Raúl Jiménez,Wolverhampton Wanderers,38,13,2018
+11,,Glenn Murray,Brighton & Hove Albion,38,13,2018
+12,,Paul Pogba,Manchester United,35,13,2018
+13,,Richarlison,Everton,35,13,2018
+14,,Alexandre Lacazette,Arsenal,35,13,2018
+15,16.0,Luka Milivojevic,Crystal Palace,38,12,2018
+16,,Ayoze Pérez,Newcastle United,37,12,2018
+17,,Ashley Barnes,Burnley,37,12,2018
+18,,Joshua King,AFC Bournemouth,35,12,2018
+19,,Roberto Firmino,Liverpool,34,12,2018
+20,,Romelu Lukaku,Manchester United,32,12,2018
+21,,Son Heung-Min,Tottenham Hotspur,31,12,2018
+22,23.0,Aleksandar Mitrovic,Fulham,37,11,2018
+23,,Salomón Rondón,Newcastle United,32,11,2018
+24,25.0,Chris Wood,Burnley,38,10,2018
+25,,Wilfried Zaha,Crystal Palace,34,10,2018
+26,,Marcus Rashford,Manchester United,33,10,2018
+27,,Lucas Moura,Tottenham Hotspur,32,10,2018
+28,,Leroy Sané,Manchester City,31,10,2018
+29,,Gerard Deulofeu,Watford,30,10,2018
+30,,Marko Arnautovic,West Ham United,28,10,2018
+31,,Anthony Martial,Manchester United,27,10,2018
+32,33.0,Felipe Anderson,West Ham United,36,9,2018
+33,,Diogo Jota,Wolverhampton Wanderers,33,9,2018
+34,,Troy Deeney,Watford,32,9,2018
+35,36.0,Christian Eriksen,Tottenham Hotspur,35,8,2018
+36,,Pedro,Chelsea,31,8,2018
+37,38.0,Ryan Fraser,AFC Bournemouth,38,7,2018
+38,,Bernardo Silva,Manchester City,36,7,2018
+39,,James Maddison,Leicester City,36,7,2018
+40,,David Brooks,AFC Bournemouth,30,7,2018
+41,,Andre Gray,Watford,29,7,2018
+42,,Gabriel Jesus,Manchester City,29,7,2018
+43,,Riyad Mahrez,Manchester City,27,7,2018
+44,,James Ward-Prowse,Southampton,26,7,2018
+45,,Javier Hernández,West Ham United,25,7,2018
+46,,Danny Ings,Southampton,24,7,2018
+47,48.0,Nathan Redmond,Southampton,38,6,2018
+48,,Andros Townsend,Crystal Palace,38,6,2018
+49,,Dominic Calvert-Lewin,Everton,35,6,2018
+0,1.0,Jamie Vardy,Leicester City,35,23,2019
+1,2.0,Danny Ings,Southampton,38,22,2019
+2,,Pierre-Emerick Aubameyang,Arsenal,36,22,2019
+3,4.0,Raheem Sterling,Manchester City,33,20,2019
+4,5.0,Mohamed Salah,Liverpool,34,19,2019
+5,6.0,Sadio Mané,Liverpool,35,18,2019
+6,,Harry Kane,Tottenham Hotspur,29,18,2019
+7,8.0,Raúl Jiménez,Wolverhampton Wanderers,38,17,2019
+8,,Anthony Martial,Manchester United,32,17,2019
+9,,Marcus Rashford,Manchester United,31,17,2019
+10,11.0,Sergio Agüero,Manchester City,24,16,2019
+11,12.0,Tammy Abraham,Chelsea,34,15,2019
+12,13.0,Gabriel Jesus,Manchester City,34,14,2019
+13,,Chris Wood,Burnley,32,14,2019
+14,15.0,Richarlison,Everton,36,13,2019
+15,,Dominic Calvert-Lewin,Everton,36,13,2019
+16,,Kevin De Bruyne,Manchester City,35,13,2019
+17,18.0,Teemu Pukki,Norwich City,36,11,2019
+18,,Riyad Mahrez,Manchester City,33,11,2019
+19,,Son Heung-Min,Tottenham Hotspur,30,11,2019
+20,21.0,Neal Maupay,Brighton & Hove Albion,37,10,2019
+21,,Mason Greenwood,Manchester United,31,10,2019
+22,,Alexandre Lacazette,Arsenal,30,10,2019
+23,,Troy Deeney,Watford,27,10,2019
+24,,Michail Antonio,West Ham United,24,10,2019
+25,26.0,Roberto Firmino,Liverpool,38,9,2019
+26,,Jordan Ayew,Crystal Palace,37,9,2019
+27,,Willian,Chelsea,36,9,2019
+28,,Christian Pulisic,Chelsea,25,9,2019
+29,30.0,Jack Grealish,Aston Villa,36,8,2019
+30,,Jay Rodríguez,Burnley,36,8,2019
+31,,Callum Wilson,AFC Bournemouth,35,8,2019
+32,,Ayoze Pérez,Leicester City,33,8,2019
+33,,Dele Alli,Tottenham Hotspur,25,8,2019
+34,,Olivier Giroud,Chelsea,18,8,2019
+35,,Bruno Fernandes,Manchester United,14,8,2019
+36,37.0,Mason Mount,Chelsea,37,7,2019
+37,,Diogo Jota,Wolverhampton Wanderers,34,7,2019
+38,,Sébastien Haller,West Ham United,32,7,2019
+39,,Harry Wilson,Liverpool,31,7,2019
+40,41.0,Todd Cantwell,Norwich City,37,6,2019
+41,,Oliver McBurnie,Sheffield United,36,6,2019
+42,,Harvey Barnes,Leicester City,36,6,2019
+43,,Bernardo Silva,Manchester City,34,6,2019
+44,,Trézéguet,Aston Villa,34,6,2019
+45,,James Maddison,Leicester City,31,6,2019
+46,,Lys Mousset,Sheffield United,30,6,2019
+47,,David Silva,Manchester City,27,6,2019
+48,,Jonjo Shelvey,Newcastle United,26,6,2019
+49,,Joshua King,AFC Bournemouth,26,6,2019
+0,1.0,Son Heung-Min,Tottenham Hotspur,35,23,2021
+1,,Mohamed Salah,Liverpool,35,23,2021
+2,3.0,Cristiano Ronaldo,Manchester United,30,18,2021
+3,4.0,Harry Kane,Tottenham Hotspur,37,17,2021
+4,5.0,Sadio Mané,Liverpool,34,16,2021
+5,6.0,Diogo Jota,Liverpool,35,15,2021
+6,,Kevin De Bruyne,Manchester City,30,15,2021
+7,,Jamie Vardy,Leicester City,25,15,2021
+8,9.0,Wilfried Zaha,Crystal Palace,33,14,2021
+9,10.0,Raheem Sterling,Manchester City,30,13,2021
+10,11.0,Jarrod Bowen,West Ham United,36,12,2021
+11,,James Maddison,Leicester City,35,12,2021
+12,,Ivan Toney,Brentford,33,12,2021
+13,14.0,Bukayo Saka,Arsenal,38,11,2021
+14,,Teemu Pukki,Norwich City,37,11,2021
+15,,Ollie Watkins,Aston Villa,35,11,2021
+16,,Raphinha,Leeds United,35,11,2021
+17,,Mason Mount,Chelsea,32,11,2021
+18,,Riyad Mahrez,Manchester City,28,11,2021
+19,20.0,James Ward-Prowse,Southampton,36,10,2021
+20,,Bruno Fernandes,Manchester United,36,10,2021
+21,,Michail Antonio,West Ham United,36,10,2021
+22,,Emmanuel Dennis,Watford,33,10,2021
+23,,Emile Smith Rowe,Arsenal,33,10,2021
+24,,Richarlison,Everton,30,10,2021
+25,26.0,Phil Foden,Manchester City,28,9,2021
+26,,Maxwel Cornet,Burnley,26,9,2021
+27,28.0,Bernardo Silva,Manchester City,35,8,2021
+28,,Jack Harrison,Leeds United,35,8,2021
+29,,Conor Gallagher,Crystal Palace,34,8,2021
+30,,Leandro Trossard,Brighton & Hove Albion,34,8,2021
+31,,Neal Maupay,Brighton & Hove Albion,32,8,2021
+32,,Saïd Benrahma,West Ham United,32,8,2021
+33,,Kai Havertz,Chelsea,29,8,2021
+34,,Gabriel Jesus,Manchester City,28,8,2021
+35,,Ilkay Gündogan,Manchester City,27,8,2021
+36,,Romelu Lukaku,Chelsea,26,8,2021
+37,,Callum Wilson,Newcastle United,18,8,2021
+38,39.0,Martin Ødegaard,Arsenal,36,7,2021
+39,,Rodri,Manchester City,33,7,2021
+40,,Ché Adams,Southampton,30,7,2021
+41,,Danny Ings,Aston Villa,30,7,2021
+42,,Yoane Wissa,Brentford,30,7,2021
+43,44.0,Pablo Fornals,West Ham United,36,6,2021
+44,,Raúl Jiménez,Wolverhampton Wanderers,34,6,2021
+45,,Jacob Ramsey,Aston Villa,34,6,2021
+46,,Youri Tielemans,Leicester City,32,6,2021
+47,,Harvey Barnes,Leicester City,32,6,2021
+48,,Armando Broja,Southampton,32,6,2021
+49,,Rodrigo,Leeds United,31,6,2021
+0,1.0,Erling Haaland,Manchester City,35,36,2022
+1,2.0,Harry Kane,Tottenham Hotspur,38,30,2022
+2,3.0,Ivan Toney,Brentford,33,20,2022
+3,4.0,Mohamed Salah,Liverpool,38,19,2022
+4,5.0,Callum Wilson,Newcastle United,31,18,2022
+5,6.0,Marcus Rashford,Manchester United,35,17,2022
+6,7.0,Martin Ødegaard,Arsenal,37,15,2022
+7,,Ollie Watkins,Aston Villa,37,15,2022
+8,,Gabriel Martinelli,Arsenal,36,15,2022
+9,10.0,Bukayo Saka,Arsenal,38,14,2022
+10,,Aleksandar Mitrovic,Fulham,24,14,2022
+11,12.0,Harvey Barnes,Leicester City,34,13,2022
+12,,Rodrigo,Leeds United,31,13,2022
+13,14.0,Miguel Almirón,Newcastle United,34,11,2022
+14,,Phil Foden,Manchester City,32,11,2022
+15,,Gabriel Jesus,Arsenal,26,11,2022
+16,,Roberto Firmino,Liverpool,25,11,2022
+17,18.0,Eberechi Eze,Crystal Palace,38,10,2022
+18,,Son Heung-Min,Tottenham Hotspur,36,10,2022
+19,,Alexis Mac Allister,Brighton & Hove Albion,35,10,2022
+20,,James Maddison,Leicester City,30,10,2022
+21,,Taiwo Awoniyi,Nottingham Forest,27,10,2022
+22,,Alexander Isak,Newcastle United,22,10,2022
+23,24.0,James Ward-Prowse,Southampton,38,9,2022
+24,,Bryan Mbeumo,Brentford,38,9,2022
+25,,Pascal Groß,Brighton & Hove Albion,37,9,2022
+26,,Julián Álvarez,Manchester City,31,9,2022
+27,,Darwin Núñez,Liverpool,29,9,2022
+28,29.0,Brennan Johnson,Nottingham Forest,38,8,2022
+29,,Bruno Fernandes,Manchester United,37,8,2022
+30,,Leandro Trossard,Arsenal,36,8,2022
+31,,Danny Ings,West Ham United,35,8,2022
+32,,Ilkay Gündogan,Manchester City,31,8,2022
+33,34.0,Yoane Wissa,Brentford,38,7,2022
+34,,Granit Xhaka,Arsenal,37,7,2022
+35,,Philip Billing,AFC Bournemouth,36,7,2022
+36,,Dwight McNeil,Everton,36,7,2022
+37,,Kai Havertz,Chelsea,35,7,2022
+38,,Solly March,Brighton & Hove Albion,33,7,2022
+39,,Kaoru Mitoma,Brighton & Hove Albion,33,7,2022
+40,,Kevin De Bruyne,Manchester City,32,7,2022
+41,,Wilfried Zaha,Crystal Palace,27,7,2022
+42,,Diogo Jota,Liverpool,22,7,2022
+43,,Cody Gakpo,Liverpool,21,7,2022
+44,45.0,Jarrod Bowen,West Ham United,38,6,2022
+45,,Douglas Luiz,Aston Villa,37,6,2022
+46,,Rúben Neves,Wolverhampton Wanderers,35,6,2022
+47,,Jacob Ramsey,Aston Villa,35,6,2022
+48,,Saïd Benrahma,West Ham United,35,6,2022
+49,,Dominic Solanke,AFC Bournemouth,33,6,2022
+0,1.0,Erling Haaland,Manchester City,31,27,2023
+1,2.0,Cole Palmer,Chelsea,34,22,2023
+2,3.0,Alexander Isak,Newcastle United,30,21,2023
+3,4.0,Dominic Solanke,AFC Bournemouth,38,19,2023
+4,,Ollie Watkins,Aston Villa,37,19,2023
+5,,Phil Foden,Manchester City,35,19,2023
+6,7.0,Mohamed Salah,Liverpool,32,18,2023
+7,8.0,Son Heung-Min,Tottenham Hotspur,35,17,2023
+8,9.0,Bukayo Saka,Arsenal,35,16,2023
+9,,Jean-Philippe Mateta,Crystal Palace,35,16,2023
+10,,Jarrod Bowen,West Ham United,34,16,2023
+11,12.0,Nicolas Jackson,Chelsea,35,14,2023
+12,,Chris Wood,Nottingham Forest,31,14,2023
+13,14.0,Kai Havertz,Arsenal,37,13,2023
+14,15.0,Yoane Wissa,Brentford,34,12,2023
+15,,Leandro Trossard,Arsenal,34,12,2023
+16,,Matheus Cunha,Wolverhampton Wanderers,32,12,2023
+17,,Hwang Hee-Chan,Wolverhampton Wanderers,29,12,2023
+18,19.0,Carlton Morris,Luton Town,38,11,2023
+19,,Julián Álvarez,Manchester City,36,11,2023
+20,,Darwin Núñez,Liverpool,36,11,2023
+21,,Anthony Gordon,Newcastle United,35,11,2023
+22,,Richarlison,Tottenham Hotspur,28,11,2023
+23,,Eberechi Eze,Crystal Palace,27,11,2023
+24,25.0,Bruno Fernandes,Manchester United,35,10,2023
+25,,Leon Bailey,Aston Villa,35,10,2023
+26,,Rasmus Højlund,Manchester United,30,10,2023
+27,,Elijah Adebayo,Luton Town,27,10,2023
+28,,Diogo Jota,Liverpool,21,10,2023
+29,,Michael Olise,Crystal Palace,19,10,2023
+30,31.0,Douglas Luiz,Aston Villa,35,9,2023
+31,,João Pedro,Brighton & Hove Albion,31,9,2023
+32,,Rodrigo Muniz,Fulham,26,9,2023
+33,,Bryan Mbeumo,Brentford,25,9,2023
+34,,Callum Wilson,Newcastle United,20,9,2023
+35,36.0,Luis Díaz,Liverpool,37,8,2023
+36,,Dejan Kulusevski,Tottenham Hotspur,36,8,2023
+37,,Martin Ødegaard,Arsenal,35,8,2023
+38,,Cody Gakpo,Liverpool,35,8,2023
+39,,Rodri,Manchester City,34,8,2023
+40,,Mohammed Kudus,West Ham United,33,8,2023
+41,,Antoine Semenyo,AFC Bournemouth,33,8,2023
+42,,Raheem Sterling,Chelsea,31,8,2023
+43,,Callum Hudson-Odoi,Nottingham Forest,29,8,2023
+44,45.0,Declan Rice,Arsenal,38,7,2023
+45,,Bruno Guimarães,Newcastle United,37,7,2023
+46,,James Ward-Prowse,West Ham United,37,7,2023
+47,,Tomás Soucek,West Ham United,37,7,2023
+48,,Alejandro Garnacho,Manchester United,36,7,2023
+49,,Marcus Rashford,Manchester United,33,7,2023
+0,1.0,Mohamed Salah,Liverpool,33,27,2024
+1,2.0,Alexander Isak,Newcastle United,31,22,2024
+2,3.0,Erling Haaland,Manchester City,28,21,2024
+3,4.0,Chris Wood,Nottingham Forest,31,19,2024
+4,5.0,Bryan Mbeumo,Brentford,33,18,2024
+5,6.0,Yoane Wissa,Brentford,30,16,2024
+6,7.0,Ollie Watkins,Aston Villa,34,15,2024
+7,,Matheus Cunha,Wolverhampton Wanderers,29,15,2024
+8,9.0,Cole Palmer,Chelsea,33,14,2024
+9,,Jean-Philippe Mateta,Crystal Palace,33,14,2024
+10,11.0,Jørgen Strand Larsen,Wolverhampton Wanderers,32,13,2024
+11,12.0,Liam Delap,Ipswich Town,33,12,2024
+12,,Justin Kluivert,AFC Bournemouth,29,12,2024
+13,14.0,Luis Díaz,Liverpool,32,11,2024
+14,,Brennan Johnson,Tottenham Hotspur,30,11,2024
+15,16.0,Raúl Jiménez,Fulham,34,10,2024
+16,,Nicolas Jackson,Chelsea,28,10,2024
+17,,João Pedro,Brighton & Hove Albion,27,10,2024
+18,19.0,Alex Iwobi,Fulham,34,9,2024
+19,,Kaoru Mitoma,Brighton & Hove Albion,33,9,2024
+20,,Jarrod Bowen,West Ham United,30,9,2024
+21,,James Maddison,Tottenham Hotspur,30,9,2024
+22,,Harvey Barnes,Newcastle United,29,9,2024
+23,,Danny Welbeck,Brighton & Hove Albion,27,9,2024
+24,,Evanilson,AFC Bournemouth,26,9,2024
+25,,Kai Havertz,Arsenal,21,9,2024
+26,27.0,Leandro Trossard,Arsenal,34,8,2024
+27,,Morgan Rogers,Aston Villa,33,8,2024
+28,,Antoine Semenyo,AFC Bournemouth,32,8,2024
+29,,Bruno Fernandes,Manchester United,32,8,2024
+30,,Tomás Soucek,West Ham United,31,8,2024
+31,,Jacob Murphy,Newcastle United,31,8,2024
+32,,Rodrigo Muniz,Fulham,31,8,2024
+33,,Cody Gakpo,Liverpool,30,8,2024
+34,35.0,Ismaïla Sarr,Crystal Palace,34,7,2024
+35,,Kevin Schade,Brentford,33,7,2024
+36,,Jamie Vardy,Leicester City,32,7,2024
+37,,Dango Ouattara,AFC Bournemouth,30,7,2024
+38,,Dejan Kulusevski,Tottenham Hotspur,29,7,2024
+39,,Iliman Ndiaye,Everton,29,7,2024
+40,,Gabriel Martinelli,Arsenal,29,7,2024
+41,,Son Heung-Min,Tottenham Hotspur,28,7,2024
+42,,Noni Madueke,Chelsea,28,7,2024
+43,,Phil Foden,Manchester City,25,7,2024
+44,,Dominic Solanke,Tottenham Hotspur,24,7,2024
+45,,Jhon Durán,Aston Villa,20,7,2024
+46,47.0,Anthony Elanga,Nottingham Forest,33,6,2024
+47,,Anthony Gordon,Newcastle United,30,6,2024
+48,,Emile Smith Rowe,Fulham,30,6,2024
+49,,Mateo Kovacic,Manchester City,28,6,2024
