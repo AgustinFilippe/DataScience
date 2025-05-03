@@ -1,7 +1,0 @@
-Información del Conjunto de Datos Información Adicional
-
-La base de datos contiene registros de 1885 personas. Para cada una, se conocen 12 características: mediciones de personalidad que incluyen NEO-FFI-R (neuroticismo, extraversión, apertura a la experiencia, amabilidad y responsabilidad), BIS-11 (impulsividad) e ImpSS (búsqueda de sensaciones); nivel educativo; edad; género; país de residencia y etnia. Todos los atributos de entrada eran originalmente categóricos y fueron convertidos en valores numéricos. Después de esta conversión, los valores de todas las características pueden considerarse números reales.
-
-Además, se les preguntó a los participantes sobre su uso de 18 drogas legales e ilegales: alcohol, anfetaminas, nitrito de amilo, benzodiacepinas, cannabis, chocolate, cocaína, cafeína, crack, éxtasis, heroína, ketamina, sustancias legales, LSD, metadona, hongos, nicotina y abuso de sustancias volátiles. También se incluyó una droga ficticia (Semeron) para identificar a quienes pudieran exagerar en sus respuestas. Para cada droga, debían elegir una de las siguientes opciones: nunca la usé, la usé hace más de una década, o en el último decenio, año, mes, semana o día.
-
-La base de datos contiene 18 problemas de clasificación. Cada variable independiente de etiqueta tiene siete clases: "Nunca Usado", "Usado hace más de una Década", "Usado en la Última Década", "Usado en el Último Año", "Usado en el Último Mes", "Usado en la Última Semana" y "Usado en el Último Día".
