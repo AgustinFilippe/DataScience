@@ -12,5 +12,6 @@ Cada proyecto está organizado en su propio directorio, con el código fuente, d
 Glosario
 - Machine Learning (ML) --> Permite a las máquinas aprender de datos y mejorar su rendimiento en tareas específicas sin ser programadas explícitamente.
 - Deep Learning (DL) --> Utiliza redes neuronales profundas para analizar grandes cantidades de datos.
-- Web Scraping -> Proceso de extraer datos de sitios web de manera automática.
+- Web Scraping --> Proceso de extraer datos de sitios web de manera automática.
 - Python / R --> Lenguajes de Programacion
+- Natural Language Processing (NLP) --> Permite a las computadoras comprender, interpretar y generar lenguaje humano.
