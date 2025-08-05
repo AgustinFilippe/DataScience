@@ -15,3 +15,6 @@ Glosario
 - Web Scraping --> Proceso de extraer datos de sitios web de manera automática.
 - Python / R --> Lenguajes de Programacion
 - Natural Language Processing (NLP) --> Permite a las computadoras comprender, interpretar y generar lenguaje humano.
+
+Links Externos:
+Linkedin: https://www.linkedin.com/in/agustin-filippe/
