@@ -1,0 +1,12 @@
+empiricaldist
+html5lib
+lxml
+jupyter
+numpy
+matplotlib
+seaborn
+scipy
+statadict
+statsmodels
+sympy
+tables
